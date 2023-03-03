@@ -282,9 +282,9 @@ static const struct ListMenuTemplate sItemListMenu =
     .cursorKind = CURSOR_BLACK_ARROW
 };
 
-static const u8 sMenuText_ByName[] = _("Name");
-static const u8 sMenuText_ByType[] = _("Type");
-static const u8 sMenuText_ByAmount[] = _("Amount");
+static const u8 sMenuText_ByName[] = _("NAME");
+static const u8 sMenuText_ByType[] = _("TYPE");
+static const u8 sMenuText_ByAmount[] = _("AMOUNT");
 static const struct MenuAction sItemMenuActions[] = {
     [ACTION_USE]               = {gMenuText_Use,      ItemMenu_UseOutOfBattle},
     [ACTION_TOSS]              = {gMenuText_Toss,     ItemMenu_Toss},
@@ -300,9 +300,9 @@ static const struct MenuAction sItemMenuActions[] = {
     [ACTION_SHOW]              = {gMenuText_Show,     ItemMenu_Show},
     [ACTION_GIVE_FAVOR_LADY]   = {gMenuText_Give2,    ItemMenu_GiveFavorLady},
     [ACTION_CONFIRM_QUIZ_LADY] = {gMenuText_Confirm,  ItemMenu_ConfirmQuizLady},
-    [ACTION_BY_NAME]   = {sMenuText_ByName,   ItemMenu_SortByName},
-    [ACTION_BY_TYPE]   = {sMenuText_ByType,   ItemMenu_SortByType},
-    [ACTION_BY_AMOUNT] = {sMenuText_ByAmount, ItemMenu_SortByAmount},
+    [ACTION_BY_NAME]           = {sMenuText_ByName,   ItemMenu_SortByName},
+    [ACTION_BY_TYPE]           = {sMenuText_ByType,   ItemMenu_SortByType},
+    [ACTION_BY_AMOUNT]         = {sMenuText_ByAmount, ItemMenu_SortByAmount},
     [ACTION_DUMMY]             = {gText_EmptyString2, NULL}
 };
 
@@ -2681,9 +2681,9 @@ enum ItemSortType
 	ITEM_TYPE_MAIL,
 };
 static const u8 sText_SortItemsHow[] = _("Sort items how?");
-static const u8 sText_Name[] = _("NAME");
-static const u8 sText_Type[] = _("TYPE");
-static const u8 sText_Amount[] = _("AMOUNT");
+static const u8 sText_Name[] = _("name");
+static const u8 sText_Type[] = _("type");
+static const u8 sText_Amount[] = _("amount");
 static const u8 sText_ItemsSorted[] = _("Items sorted by {STR_VAR_1}!");
 static const u8 *const sSortTypeStrings[] = 
 {
